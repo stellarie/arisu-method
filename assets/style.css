@@ -134,6 +134,9 @@ svg text {
 .f-sky { fill: var(--sky); }
 .f-card { fill: var(--card); }
 
+.s-butter { stroke: var(--butter); }
+.s-pink { stroke: var(--pink); }
+
 .jp {
   font-family: "Noto Serif JP", "Hiragino Mincho ProN", "Yu Mincho", "Noto Serif CJK JP", serif;
   font-weight: 600;
@@ -279,6 +282,10 @@ svg text {
   padding: 16px;
 }
 
+.window__body li {
+  margin-bottom: 6px;
+}
+
 .window__body > :last-child {
   margin-bottom: 0;
 }
@@ -307,9 +314,17 @@ svg text {
   margin-top: 12px;
 }
 
+.hero--stage .hero__art {
+  max-width: 300px;
+}
+
 @media (min-width: 40rem) {
   .hero {
     grid-template-columns: 1fr 220px;
+  }
+
+  .hero--stage {
+    grid-template-columns: 1fr 300px;
   }
 }
 
@@ -463,6 +478,15 @@ svg text {
   min-width: 0;
 }
 
+.alert__text h2 {
+  margin-bottom: 6px;
+}
+
+.alert__text ul {
+  margin: 0 0 12px;
+  padding-left: 1.25rem;
+}
+
 .alert__text > :last-child {
   margin-bottom: 0;
 }
@@ -526,9 +550,9 @@ svg text {
 }
 
 @keyframes flip {
-  0%, 45% { transform: scaleX(1); }
-  50%, 95% { transform: scaleX(-1); }
-  100% { transform: scaleX(1); }
+  0%, 40%, 100% { transform: scaleX(1); }
+  50% { transform: scaleX(0.08); }
+  60% { transform: scaleX(1); }
 }
 
 .anim-blink {
