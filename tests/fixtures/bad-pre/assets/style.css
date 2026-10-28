@@ -1,0 +1,2 @@
+:root { --paper: #fff; --ink: #111; }
+body { background: var(--paper); color: var(--ink); }
