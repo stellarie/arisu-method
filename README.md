@@ -1,0 +1,107 @@
+<div align="center">
+
+# ♡ The Arisu Method ♡
+
+**A read-only beginner guide to one Japanese learning roadmap~**
+
+English | [简体中文](README.zh-Hans.md) | [繁體中文](README.zh-Hant.md)
+
+[stellarie.github.io/arisu-method](https://stellarie.github.io/arisu-method/) (｡•̀ᴗ-)✧
+
+</div>
+
+> A personal method, not a course. The author learned Japanese from zero with it.
+
+## What is this?
+
+This site is a step-by-step guide for complete beginners in Japanese. It has eight stages. Each stage page says what to do, why, and when to move on.
+
+- **Overview page:** a desktop with eight folders, one for each stage.
+- **Stage pages:** each page has a picture, an info panel, steps, exit checks, pitfalls, and links.
+
+You read the site in a browser. It uses plain HTML and CSS, with no JavaScript and no build step.
+
+## The eight stages
+
+| # | Stage | You do |
+|---|---|---|
+| 1 | Kana and Tae Kim | Learn kana. Read Tae Kim's guide up to から and けど. |
+| 2 | 吾輩は猫である | Read the novel. Crawl if you must. |
+| 3 | 週に一度クラスメイトを買う話 | Read the novel. Then start output. |
+| 4 | 四字熟語 | Learn 200 to 300 four-character idioms. |
+| 5 | 般若心経 and 魏志倭人伝 | Read both texts alongside stages 2 to 7. |
+| 6 | Japanese Wikipedia | Read it in large amounts. |
+| 7 | Really old texts | Read old texts. Do not give up. |
+| 8 | Chinese | Start to learn Chinese. |
+
+## Requirements
+
+- A web browser. This is all you need to read the guide.
+- To run the quality gate: Bash with GNU `grep`, `sed`, and `diff`. The author tested only Linux.
+- Optional: `vnu` or `tidy` for HTML validation. Without them the gate prints `SKIP html-validate`.
+
+## Use it (≧∀≦)
+
+### 1. Read it online
+
+Open <https://stellarie.github.io/arisu-method/>. You see a desktop with eight folders.
+
+### 2. Or get a local copy
+
+```bash
+git clone https://github.com/stellarie/arisu-method.git
+```
+
+You get a folder named `arisu-method`.
+
+### 3. Open the overview page
+
+Open `arisu-method/index.html` in your browser. All links are relative, so the site works from `file://`.
+
+Fonts come from Google Fonts. Pages fall back to system fonts when the load fails.
+
+## Quality gate
+
+`./check.sh` checks the whole site. Each failure prints one line: `FAIL <check> <file>: <detail>`.
+
+| Check | It fails when |
+|---|---|
+| shared | A nav or footer block differs from the block in `index.html`. |
+| link | A local `href` or `src` points to a missing file. |
+| pre | A page contains `<pre>`. |
+| script | A page contains a script tag, an inline event handler, or a `javascript:` URL. |
+| svg | An `<svg>` has no `role="img"` or no `<title>`. |
+| svg-color | An inline `<svg>` uses a hex color. |
+| chain | The prev and next links do not form one chain from stage 1 to stage 8. |
+| verify | A `VERIFY` comment remains, and you passed `--release`. |
+| html-validate | `vnu` or `tidy` reports an error. |
+
+The gate also lists Latin words inside `lang="ja"` elements. This report is for information only.
+
+A passing run prints `check: pass` and exits 0.
+
+## Configuration
+
+| Setting | Where | Default |
+|---|---|---|
+| Dark mode | Your browser or system theme | Follows the system |
+| Reduced motion | Your system setting | Animations stop |
+| Pages source | Repository settings | Branch `main`, path `/` |
+| Jekyll | `.nojekyll` | Off |
+
+## Develop (๑•̀ㅂ•́)و✧
+
+```bash
+./check.sh
+./check.sh --release
+bash tests/run.sh
+```
+
+- `./check.sh` runs the gate. Add `--release` to fail on every `VERIFY` comment.
+- `bash tests/run.sh` runs the gate on the fixture sites under `tests/fixtures/`. It runs 11 cases. Each line prints `ok` or `FAIL`.
+
+> Known gap (´ ˘ `): some durations, example texts, and claims are still drafts. The author marks each one with a `VERIFY` comment in the HTML. `./check.sh --release` lists them.
+
+## License
+
+All rights reserved © stellarie. Made with ♡ ( •̀ᴗ•́ )و
