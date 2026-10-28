@@ -18,6 +18,7 @@ CASES=(
   "verify-marker-release|verify-marker|--release|1|^FAIL verify "
   "verify-marker-plain|verify-marker||0|^INFO verify "
   "info-romaji|info-romaji||0|^INFO romaji "
+  "bad-template|bad-template||1|^FAIL template "
 )
 
 fails=0

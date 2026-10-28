@@ -71,6 +71,7 @@ Fonts come from Google Fonts. Pages fall back to system fonts when the load fail
 | link | A local `href` or `src` points to a missing file. |
 | pre | A page contains `<pre>`. |
 | script | A page contains a script tag, an inline event handler, or a `javascript:` URL. |
+| template | A page contains leaked generator code, such as `{J("x")}`. |
 | svg | An `<svg>` has no `role="img"` or no `<title>`. |
 | svg-color | An inline `<svg>` uses a hex color. |
 | chain | The prev and next links do not form one chain from stage 1 to stage 8. |
@@ -99,7 +100,7 @@ bash tests/run.sh
 ```
 
 - `./check.sh` runs the gate. Add `--release` to fail on every `VERIFY` comment.
-- `bash tests/run.sh` runs the gate on the fixture sites under `tests/fixtures/`. It runs 11 cases. Each line prints `ok` or `FAIL`.
+- `bash tests/run.sh` runs the gate on the fixture sites under `tests/fixtures/`. It runs 12 cases. Each line prints `ok` or `FAIL`.
 
 > Known gap (´ ˘ `): some durations, example texts, and claims are still drafts. The author marks each one with a `VERIFY` comment in the HTML. `./check.sh --release` lists them.
 

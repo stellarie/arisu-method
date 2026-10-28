@@ -71,6 +71,7 @@ git clone https://github.com/stellarie/arisu-method.git
 | link | 本機 `href` 或 `src` 指向不存在的檔案。 |
 | pre | 頁面含有 `<pre>`。 |
 | script | 頁面含有 script 標籤、內嵌事件處理屬性或 `javascript:` URL。 |
+| template | 頁面中殘留產生器程式碼，例如 `{J("x")}`。 |
 | svg | `<svg>` 沒有 `role="img"` 或沒有 `<title>`。 |
 | svg-color | 內嵌 `<svg>` 使用了十六進位顏色。 |
 | chain | 上一頁和下一頁的連結沒有組成從階段 1 到階段 8 的一條鏈。 |
@@ -99,7 +100,7 @@ bash tests/run.sh
 ```
 
 - `./check.sh` 執行品質檢查。加上 `--release`，每個 `VERIFY` 註解都會導致失敗。
-- `bash tests/run.sh` 在 `tests/fixtures/` 下的範例網站上執行檢查，共 11 個案例。每行輸出 `ok` 或 `FAIL`。
+- `bash tests/run.sh` 在 `tests/fixtures/` 下的範例網站上執行檢查，共 12 個案例。每行輸出 `ok` 或 `FAIL`。
 
 > 已知缺口 (´ ˘ `)：部分時長、範例文本和說法仍是草稿。作者在 HTML 中用 `VERIFY` 註解標出每一處。`./check.sh --release` 會列出它們。
 

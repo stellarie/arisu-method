@@ -148,6 +148,14 @@ for f in "$ROOT"/*.js "$ROOT"/assets/*.js "$ROOT"/stages/*.js; do
   [[ -f $f ]] && fail script "${f#"$ROOT"/}" "JavaScript file"
 done
 
+# ---- Check: leaked template code -------------------------------------
+# A generator placeholder like {J("x")} must never reach a page.
+
+for p in "${PAGES[@]}"; do
+  hit=$(grep -n -m1 -E '\{[A-Za-z_]+(\(|\[)' "$ROOT/$p")
+  [[ -n $hit ]] && fail template "$p" "placeholder at line ${hit%%:*}"
+done
+
 # ---- Check: SVG accessibility and colors -----------------------------
 
 ROLE_RE='role[[:space:]]*=[[:space:]]*["'"'"']img["'"'"']'
