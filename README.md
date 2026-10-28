@@ -66,6 +66,7 @@ Fonts come from Google Fonts. Pages fall back to system fonts when the load fail
 
 | Check | It fails when |
 |---|---|
+| structure | `index.html` is missing. |
 | shared | A nav or footer block differs from the block in `index.html`. |
 | link | A local `href` or `src` points to a missing file. |
 | pre | A page contains `<pre>`. |

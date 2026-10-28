@@ -405,3 +405,5 @@ footer {
 
 .outro { margin: 8px auto 0; text-align: center; font-family: "Mochiy Pop One", "Zen Maru Gothic", sans-serif; color: var(--pink-deep); }
 .note a { font-weight: 700; }
+.fill-soft { fill: var(--pink-soft); }
+.pager__prev { margin-right: auto; }

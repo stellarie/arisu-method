@@ -66,6 +66,7 @@ git clone https://github.com/stellarie/arisu-method.git
 
 | 檢查 | 失敗條件 |
 |---|---|
+| structure | 缺少 `index.html`。 |
 | shared | 某個導覽或頁尾區塊與 `index.html` 中的區塊不同。 |
 | link | 本機 `href` 或 `src` 指向不存在的檔案。 |
 | pre | 頁面含有 `<pre>`。 |
