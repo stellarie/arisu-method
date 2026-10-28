@@ -14,10 +14,10 @@ English | [简体中文](README.zh-Hans.md) | [繁體中文](README.zh-Hant.md)
 
 ## What is this?
 
-This site is a step-by-step guide for complete beginners in Japanese. It has eight stages. Each stage page says what to do, why, and when to move on.
+This site is a guide for complete beginners in Japanese. It has eight stages. Each stage page explains why the stage works, more than what to do.
 
-- **Overview page:** a desktop with eight folders, one for each stage.
-- **Stage pages:** each page has a picture, an info panel, steps, exit checks, pitfalls, and links.
+- **Overview page:** a road of eight pink hearts, one for each stage.
+- **Stage pages:** each page explains the idea, why it works, what it feels like, signs of progress, common mistakes, the step, and links.
 
 You read the site in a browser. It uses plain HTML and CSS, with no JavaScript and no build step.
 
@@ -44,7 +44,7 @@ You read the site in a browser. It uses plain HTML and CSS, with no JavaScript a
 
 ### 1. Read it online
 
-Open <https://stellarie.github.io/arisu-method/>. You see a desktop with eight folders.
+Open <https://stellarie.github.io/arisu-method/>. You see a road of eight hearts.
 
 ### 2. Or get a local copy
 

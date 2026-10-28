@@ -388,6 +388,20 @@ footer {
 .fill-tape { fill: var(--tape-3); }
 .stroke-card { stroke: var(--card); }
 
-/* Preview: stages without a page yet */
-.is-soon { opacity: .72; }
-.is-soon::after { content: "Page coming soon ♡"; display: block; margin-top: 6px; font-size: .8rem; color: var(--pink-deep); }
+.stroke-pink { stroke: var(--pink); }
+
+.sticker-text { fill: currentColor; font: 400 54px "Zen Maru Gothic", sans-serif; }
+.sticker-text--sm { font-size: 34px; }
+.sticker-text--seal { fill: var(--pink-deep); font-size: 76px; font-weight: 700; }
+
+/* Smug-cute lines sit apart from the facts */
+.tease { color: var(--pink-deep); font-weight: 700; }
+.stop__card .stop__tease { margin-top: 6px; color: var(--pink-deep); font-size: .88rem; font-weight: 700; }
+
+.journal--pink .tape { background: var(--tape-1); transform: rotate(-2.5deg); }
+.crossed { list-style: none; padding: 0; margin: 0; }
+.crossed li { position: relative; padding-left: 1.7em; }
+.crossed li::before { content: "✕"; position: absolute; left: .1em; color: var(--pink-deep); font-weight: 700; }
+
+.outro { margin: 8px auto 0; text-align: center; font-family: "Mochiy Pop One", "Zen Maru Gothic", sans-serif; color: var(--pink-deep); }
+.note a { font-weight: 700; }
