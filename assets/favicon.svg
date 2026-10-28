@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 52" role="img">
+  <title>The Arisu Method icon</title>
+  <style>
+    .body { fill: #ffc2d6; stroke: #1c1b22; }
+    .glyph { fill: #1c1b22; }
+    @media (prefers-color-scheme: dark) {
+      .body { fill: #7a3f57; stroke: #efe9dc; }
+      .glyph { fill: #efe9dc; }
+    }
+  </style>
+  <path class="body" stroke-width="3" d="M3 6h20l6 7h32v35H3z"/>
+  <text class="glyph" x="32" y="40" font-size="24" font-weight="700" text-anchor="middle">あ</text>
+</svg>
