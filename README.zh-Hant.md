@@ -27,14 +27,14 @@
 
 | # | 階段 | 要做的事 |
 |---|---|---|
-| 1 | Kana and Tae Kim | 學會假名。讀 Tae Kim 的指南，讀到 から 和 けど 為止。 |
-| 2 | 吾輩は猫である | 讀這部小說。必要時慢慢爬行。 |
-| 3 | 週に一度クラスメイトを買う話 | 讀這部小說，然後開始輸出。 |
-| 4 | 四字熟語 | 學會 200 到 300 個四字熟語。 |
-| 5 | 般若心経 and 魏志倭人伝 | 在階段 2 到 7 期間一併閱讀這兩篇文本。 |
-| 6 | Japanese Wikipedia | 大量閱讀日語維基百科。 |
-| 7 | Really old texts | 讀很古老的文本。不要放棄。 |
-| 8 | Chinese | 開始學習中文。 |
+| 1 | Baby steps（Kana and Tae Kim） | 學會假名。讀 Tae Kim 的指南，讀到 から 和 けど 為止。 |
+| 2 | Dive deep, dive hard（吾輩は猫である） | 讀這部小說。必要時慢慢爬行。 |
+| 3 | Modern input and output（週に一度クラスメイトを買う話） | 讀這部小說，然後開始輸出。 |
+| 4 | Compressing your thoughts in four characters（四字熟語） | 學會 200 到 300 個四字熟語。 |
+| 5 | A primer on old text（般若心経 and 魏志倭人伝） | 在階段 2 到 7 期間一併閱讀這兩篇文本。 |
+| 6 | Trivia and more（Japanese Wikipedia） | 大量閱讀日語維基百科。 |
+| 7 | Even more old text（Really old texts） | 讀很古老的文本。不要放棄。 |
+| 8 | Congratulations, you can now start Chinese（Chinese） | 開始學習中文。 |
 
 ## 環境需求
 

@@ -205,7 +205,8 @@ h1, h2, h3 {
 .stop:nth-child(odd) .stop__card { grid-column: 1; }
 .stop:nth-child(even) .stop__card { grid-column: 3; }
 
-.stop__card h2 { font-size: 1.1rem; margin: 0 0 4px; }
+.stop__card h2 { font-size: 1.1rem; margin: 0; }
+.stop__card .stop__sub { margin: 0 0 6px; color: var(--pink-deep); font-size: .88rem; font-weight: 700; }
 .stop__card p { margin: 0; color: var(--muted); font-size: .95rem; }
 
 .ribbon {
@@ -237,7 +238,7 @@ h1, h2, h3 {
 }
 
 .badge {
-  grid-row: span 2;
+  grid-row: span 3;
   width: 110px;
   height: 100px;
   color: var(--pink);
@@ -246,10 +247,11 @@ h1, h2, h3 {
 
 .page-head h1 { margin: 0; font-size: clamp(1.8rem, 6vw, 2.8rem); }
 .page-head__kicker { margin: 0; color: var(--muted); font-weight: 700; }
+.page-head__sub { margin: 0; color: var(--pink-deep); font-weight: 700; font-size: 1.05rem; }
 
 .sticker {
   grid-column: 3;
-  grid-row: 1 / span 2;
+  grid-row: 1 / span 3;
   width: 220px;
   color: var(--ink);
   transform: rotate(4deg);
