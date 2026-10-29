@@ -1,6 +1,6 @@
 <div align="center">
 
-# ♡ The Arisu Method ♡
+# ♡ Arisu's Guide to Japanese ♡
 
 **A read-only beginner guide to one Japanese learning roadmap~**
 
@@ -78,6 +78,7 @@ Fonts come from Google Fonts. Pages fall back to system fonts when the load fail
 | svg | An `<svg>` has no `role="img"` or no `<title>`. |
 | svg-color | An inline `<svg>` uses a hex color. |
 | chain | The prev and next links do not form one chain from stage 1 to stage 8. |
+| front | `index.html` does not link `tools.html` or `faq.html` from its body. |
 | cue | A stage page has no `class="go"` move-on block. |
 | verify | A `VERIFY` comment remains, and you passed `--release`. |
 | html-validate | `vnu` or `tidy` reports an error. |
@@ -104,7 +105,7 @@ bash tests/run.sh
 ```
 
 - `./check.sh` runs the gate. Add `--release` to fail on every `VERIFY` comment.
-- `bash tests/run.sh` runs the gate on the fixture sites under `tests/fixtures/`. It runs 15 cases. Each line prints `ok` or `FAIL`.
+- `bash tests/run.sh` runs the gate on the fixture sites under `tests/fixtures/`. It runs 16 cases. Each line prints `ok` or `FAIL`.
 
 > Known gap (´ ˘ `): some durations, example texts, and claims are still drafts. The author marks each one with a `VERIFY` comment in the HTML. `./check.sh --release` lists them.
 

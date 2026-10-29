@@ -406,6 +406,20 @@ footer {
 
 .outro { margin: 8px auto 0; text-align: center; font-family: "Mochiy Pop One", "Zen Maru Gothic", sans-serif; color: var(--pink-deep); }
 .note a { font-weight: 700; }
+
+/* Hero pills to Tools and FAQ */
+.hero__links { display: flex; justify-content: center; gap: 12px; flex-wrap: wrap; margin: 20px 0 0; }
+.pill {
+  padding: 8px 22px;
+  border-radius: 999px;
+  background: var(--pink);
+  border: 2px solid var(--pink);
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+}
+.pill--soft { background: var(--card); color: var(--pink-deep); }
+.pill:hover { transform: translateY(-2px); }
 .fill-soft { fill: var(--pink-soft); }
 .pager__prev { margin-right: auto; }
 

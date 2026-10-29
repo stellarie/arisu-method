@@ -229,6 +229,18 @@ for ((i = 0; i < count; i++)); do
   done
 done
 
+# ---- Check: front page links the top-level pages ---------------------
+# tools.html and faq.html must be reachable from the front page body,
+# not only from the shared nav.
+
+if [[ -f $ROOT/index.html ]]; then
+  body=$(sed -n '/<main/,/<\/main>/p' "$ROOT/index.html")
+  for extra in tools.html faq.html; do
+    [[ -f $ROOT/$extra ]] || continue
+    grep -qE "href=\"$extra\"" <<<"$body" || fail front index.html "main does not link $extra"
+  done
+fi
+
 # ---- Check: move-on cue on every stage page --------------------------
 # Each stage tells the reader when to move on, in a class="go" block.
 
