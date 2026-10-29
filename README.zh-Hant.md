@@ -1,6 +1,6 @@
 <div align="center">
 
-# ♡ The Arisu Method ♡
+# ♡ Arisu's Guide to Japanese ♡
 
 **一份唯讀的日語入門學習路線指南~**
 
@@ -78,6 +78,7 @@ git clone https://github.com/stellarie/arisu-method.git
 | svg | `<svg>` 沒有 `role="img"` 或沒有 `<title>`。 |
 | svg-color | 內嵌 `<svg>` 使用了十六進位顏色。 |
 | chain | 上一頁和下一頁的連結沒有組成從階段 1 到階段 8 的一條鏈。 |
+| front | `index.html` 的正文沒有連結到 `tools.html` 或 `faq.html`。 |
 | cue | 某個階段頁面沒有 `class="go"` 的「何時進入下一步」區塊。 |
 | verify | 仍有 `VERIFY` 註解，且你傳入了 `--release`。 |
 | html-validate | `vnu` 或 `tidy` 回報了錯誤。 |
@@ -104,7 +105,7 @@ bash tests/run.sh
 ```
 
 - `./check.sh` 執行品質檢查。加上 `--release`，每個 `VERIFY` 註解都會導致失敗。
-- `bash tests/run.sh` 在 `tests/fixtures/` 下的範例網站上執行檢查，共 15 個案例。每行輸出 `ok` 或 `FAIL`。
+- `bash tests/run.sh` 在 `tests/fixtures/` 下的範例網站上執行檢查，共 16 個案例。每行輸出 `ok` 或 `FAIL`。
 
 > 已知缺口 (´ ˘ `)：部分時長、範例文本和說法仍是草稿。作者在 HTML 中用 `VERIFY` 註解標出每一處。`./check.sh --release` 會列出它們。
 

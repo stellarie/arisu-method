@@ -22,6 +22,7 @@ CASES=(
   "bad-cue|bad-cue||1|^FAIL cue stages/02-b.html"
   "bad-toplevel|bad-toplevel||1|^FAIL link tools.html"
   "bad-nested|bad-nested||1|^FAIL nested stages/02-b.html"
+  "bad-front|bad-front||1|^FAIL front index.html"
 )
 
 fails=0
