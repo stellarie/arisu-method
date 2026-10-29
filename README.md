@@ -27,14 +27,14 @@ You read the site in a browser. It uses plain HTML and CSS, with no JavaScript a
 
 | # | Stage | You do |
 |---|---|---|
-| 1 | Kana and Tae Kim | Learn kana. Read Tae Kim's guide up to から and けど. |
-| 2 | 吾輩は猫である | Read the novel. Crawl if you must. |
-| 3 | 週に一度クラスメイトを買う話 | Read the novel. Then start output. |
-| 4 | 四字熟語 | Learn 200 to 300 four-character idioms. |
-| 5 | 般若心経 and 魏志倭人伝 | Read both texts alongside stages 2 to 7. |
-| 6 | Japanese Wikipedia | Read it in large amounts. |
-| 7 | Really old texts | Read old texts. Do not give up. |
-| 8 | Chinese | Start to learn Chinese. |
+| 1 | Baby steps (Kana and Tae Kim) | Learn kana. Read Tae Kim's guide up to から and けど. |
+| 2 | Dive deep, dive hard (吾輩は猫である) | Read the novel. Crawl if you must. |
+| 3 | Modern input and output (週に一度クラスメイトを買う話) | Read the novel. Then start output. |
+| 4 | Compressing your thoughts in four characters (四字熟語) | Learn 200 to 300 four-character idioms. |
+| 5 | A primer on old text (般若心経 and 魏志倭人伝) | Read both texts alongside stages 2 to 7. |
+| 6 | Trivia and more (Japanese Wikipedia) | Read it in large amounts. |
+| 7 | Even more old text (Really old texts) | Read old texts. Do not give up. |
+| 8 | Congratulations, you can now start Chinese (Chinese) | Start to learn Chinese. |
 
 ## Requirements
 
