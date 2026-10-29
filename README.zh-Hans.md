@@ -74,6 +74,7 @@ git clone https://github.com/stellarie/arisu-method.git
 | pre | 页面含有 `<pre>`。 |
 | script | 页面含有 script 标签、内联事件处理属性或 `javascript:` URL。 |
 | template | 页面中残留生成器代码，例如 `{J("x")}`。 |
+| nested | 标签内部又出现了标签，例如 `<ul class="<span">`。 |
 | svg | `<svg>` 没有 `role="img"` 或没有 `<title>`。 |
 | svg-color | 内联 `<svg>` 使用了十六进制颜色。 |
 | chain | 上一页和下一页的链接没有组成从阶段 1 到阶段 8 的一条链。 |
@@ -103,7 +104,7 @@ bash tests/run.sh
 ```
 
 - `./check.sh` 运行质量检查。加上 `--release`，每个 `VERIFY` 注释都会导致失败。
-- `bash tests/run.sh` 在 `tests/fixtures/` 下的示例站点上运行检查，共 14 个用例。每行输出 `ok` 或 `FAIL`。
+- `bash tests/run.sh` 在 `tests/fixtures/` 下的示例站点上运行检查，共 15 个用例。每行输出 `ok` 或 `FAIL`。
 
 > 已知缺口 (´ ˘ `)：部分时长、示例文本和说法仍是草稿。作者在 HTML 中用 `VERIFY` 注释标出每一处。`./check.sh --release` 会列出它们。
 

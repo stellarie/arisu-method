@@ -21,6 +21,7 @@ CASES=(
   "bad-template|bad-template||1|^FAIL template "
   "bad-cue|bad-cue||1|^FAIL cue stages/02-b.html"
   "bad-toplevel|bad-toplevel||1|^FAIL link tools.html"
+  "bad-nested|bad-nested||1|^FAIL nested stages/02-b.html"
 )
 
 fails=0

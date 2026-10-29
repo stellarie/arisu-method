@@ -156,6 +156,16 @@ for p in "${PAGES[@]}"; do
   [[ -n $hit ]] && fail template "$p" "placeholder at line ${hit%%:*}"
 done
 
+# ---- Check: tag inside a tag -----------------------------------------
+# A "<" between "<tag" and its ">" means a tag leaked into an attribute.
+
+for p in "${PAGES[@]}"; do
+  load "$p"
+  if printf '%s\n' "$FLAT" | grep -qE '<[A-Za-z][^<>]*<'; then
+    fail nested "$p" "a tag opens inside another tag"
+  fi
+done
+
 # ---- Check: SVG accessibility and colors -----------------------------
 
 ROLE_RE='role[[:space:]]*=[[:space:]]*["'"'"']img["'"'"']'
