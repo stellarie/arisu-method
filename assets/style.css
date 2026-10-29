@@ -107,7 +107,7 @@ a:focus-visible { outline: 3px dashed var(--pink); outline-offset: 3px; border-r
   font-weight: 700;
 }
 .topbar__menu summary::-webkit-details-marker { display: none; }
-.topbar__menu ol {
+.topbar__panel {
   position: absolute;
   right: 0;
   z-index: 5;
@@ -119,6 +119,7 @@ a:focus-visible { outline: 3px dashed var(--pink); outline-offset: 3px; border-r
   border-radius: 18px;
   box-shadow: var(--shadow);
 }
+.topbar__menu ol { margin: 0; padding: 0 0 0 4px; }
 
 /* Layout */
 
@@ -407,3 +408,79 @@ footer {
 .note a { font-weight: 700; }
 .fill-soft { fill: var(--pink-soft); }
 .pager__prev { margin-right: auto; }
+
+/* Top bar: extra links under the stage list */
+.topbar__menu .topbar__extra {
+  margin: 8px 0 0 -20px;
+  padding-top: 6px;
+  border-top: 2px dashed var(--line);
+  font-weight: 700;
+}
+.topbar__menu .topbar__extra a { margin-right: 12px; }
+
+/* Move-on cue: a stamp under the step */
+.go {
+  position: relative;
+  max-width: 34em;
+  margin: 0 auto 36px;
+  padding: 16px 22px 14px;
+  border: 3px dashed var(--pink);
+  border-radius: 22px;
+  background: var(--card);
+  transform: rotate(-.6deg);
+}
+.go::before {
+  content: "move on when ♡";
+  position: absolute;
+  top: -13px;
+  left: 20px;
+  padding: 0 12px;
+  background: var(--pink);
+  color: #fff;
+  border-radius: 999px;
+  font-size: .85rem;
+  font-weight: 700;
+}
+.go ul { margin: 0; }
+
+/* Tools page */
+.tools { margin: 8px 0 0; }
+.tools dt { font-weight: 700; margin-top: 14px; }
+.tools dt:first-child { margin-top: 0; }
+.tools dd { margin: 2px 0 0; color: var(--muted); }
+.tools dd .tease { display: block; }
+.tag {
+  display: inline-block;
+  margin-left: 6px;
+  padding: 0 10px;
+  background: var(--tape-2);
+  border-radius: 999px;
+  font-size: .78rem;
+  font-weight: 700;
+  color: var(--ink);
+  vertical-align: middle;
+}
+.tag--pink { background: var(--tape-1); }
+
+/* FAQ page */
+.faq details {
+  margin: 14px 0;
+  padding: 10px 18px;
+  background: var(--bg);
+  border: 2px dashed var(--line);
+  border-radius: 18px;
+}
+.faq summary {
+  cursor: pointer;
+  font-weight: 700;
+  font-family: "Mochiy Pop One", "Zen Maru Gothic", sans-serif;
+  font-weight: 400;
+}
+.faq summary::marker { color: var(--pink); }
+.faq details p { margin: 8px 0 4px; }
+
+/* Stage-only extras */
+.kanbun { list-style: none; padding: 0; margin: 0; }
+.kanbun li { padding: 8px 0; border-bottom: 1px dashed var(--line); }
+.kanbun li:last-child { border-bottom: 0; }
+.kanbun .jp { font-size: 1.15rem; font-weight: 700; margin-right: .5em; }

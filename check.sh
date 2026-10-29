@@ -55,7 +55,7 @@ STAGES=()
 if [[ ! -f $ROOT/index.html ]]; then
   fail structure index.html "missing"
 fi
-for f in "$ROOT/index.html" "$ROOT/404.html" "$ROOT"/stages/*.html; do
+for f in "$ROOT/index.html" "$ROOT/404.html" "$ROOT/tools.html" "$ROOT/faq.html" "$ROOT"/stages/*.html; do
   [[ -f $f ]] || continue
   rel=${f#"$ROOT"/}
   PAGES+=("$rel")
@@ -217,6 +217,13 @@ for ((i = 0; i < count; i++)); do
     fi
     [[ $h == "$exp" ]] || fail chain "$p" "rel=\"$dir\" points to '$h', expected $exp"
   done
+done
+
+# ---- Check: move-on cue on every stage page --------------------------
+# Each stage tells the reader when to move on, in a class="go" block.
+
+for p in "${STAGES[@]}"; do
+  grep -qE 'class="go"' "$ROOT/$p" || fail cue "$p" "no class=\"go\" move-on block"
 done
 
 # ---- Check: VERIFY markers -------------------------------------------
