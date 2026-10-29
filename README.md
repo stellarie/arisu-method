@@ -17,7 +17,9 @@ English | [简体中文](README.zh-Hans.md) | [繁體中文](README.zh-Hant.md)
 This site is a guide for complete beginners in Japanese. It has eight stages. Each stage page explains why the stage works, more than what to do.
 
 - **Overview page:** a road of eight pink hearts, one for each stage.
-- **Stage pages:** each page explains the idea, why it works, what it feels like, signs of progress, common mistakes, the step, and links.
+- **Stage pages:** each page explains the idea, why it works, what it feels like, signs of progress, common mistakes, the step, when to move on, and links and tools.
+- **Tools page:** every dictionary, popup reader, flashcard app, free text, and place to talk, sorted by what it does.
+- **FAQ page:** the questions beginners ask, answered once.
 
 You read the site in a browser. It uses plain HTML and CSS, with no JavaScript and no build step.
 
@@ -75,6 +77,7 @@ Fonts come from Google Fonts. Pages fall back to system fonts when the load fail
 | svg | An `<svg>` has no `role="img"` or no `<title>`. |
 | svg-color | An inline `<svg>` uses a hex color. |
 | chain | The prev and next links do not form one chain from stage 1 to stage 8. |
+| cue | A stage page has no `class="go"` move-on block. |
 | verify | A `VERIFY` comment remains, and you passed `--release`. |
 | html-validate | `vnu` or `tidy` reports an error. |
 
@@ -100,7 +103,7 @@ bash tests/run.sh
 ```
 
 - `./check.sh` runs the gate. Add `--release` to fail on every `VERIFY` comment.
-- `bash tests/run.sh` runs the gate on the fixture sites under `tests/fixtures/`. It runs 12 cases. Each line prints `ok` or `FAIL`.
+- `bash tests/run.sh` runs the gate on the fixture sites under `tests/fixtures/`. It runs 14 cases. Each line prints `ok` or `FAIL`.
 
 > Known gap (´ ˘ `): some durations, example texts, and claims are still drafts. The author marks each one with a `VERIFY` comment in the HTML. `./check.sh --release` lists them.
 

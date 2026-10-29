@@ -19,6 +19,8 @@ CASES=(
   "verify-marker-plain|verify-marker||0|^INFO verify "
   "info-romaji|info-romaji||0|^INFO romaji "
   "bad-template|bad-template||1|^FAIL template "
+  "bad-cue|bad-cue||1|^FAIL cue stages/02-b.html"
+  "bad-toplevel|bad-toplevel||1|^FAIL link tools.html"
 )
 
 fails=0
